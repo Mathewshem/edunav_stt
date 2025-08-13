@@ -1,0 +1,26 @@
+# --- API ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+pydantic==2.8.2
+
+# --- Core STT path (cloud-based recognizer via SpeechRecognition) ---
+SpeechRecognition==3.10.4
+pyaudio==0.2.14           # Pi: needs 'sudo apt-get install -y portaudio19-dev' first
+
+# --- File handling ---
+pydub==0.25.1             # for converting mp3/m4a/ogg -> wav (needs ffmpeg system binary)
+soundfile==0.12.1
+numpy==1.26.4
+sounddevice
+vosk
+
+# --- Optional: Offline STT (recommended on Pi 2GB) ---
+# vosk==0.3.45           # uncomment to enable offline engine
+
+# --- Optional: Whisper local (heavier; probably too big for Pi 2GB) ---
+# openai-whisper==20231117
+
+#pi
+#sudo apt-get update
+#sudo apt-get install -y portaudio19-dev ffmpeg

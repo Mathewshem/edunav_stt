@@ -1,0 +1,6 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+debug_input.wav
+models/vosk_model/
